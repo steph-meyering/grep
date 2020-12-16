@@ -12,7 +12,10 @@ Once you have the file, write a series of grep statements that do the following:
 
 
     Print all lines that begin with three digits followed by a blank. Your answer must use the \{ and \} repetition specifier.
+      cat grepdata.txt | grep -P '^\d{3}[\s]'
+
     Print all lines that contain a date. Hint: this is a very simple pattern. It does not have to work for any year before 2000.
+      
     Print all lines containing a vowel (a, e, i, o, or u) followed by a single character followed by the same vowel again. Thus, it will find “eve” or “adam” but not “vera”. Hint: \( and \)
     Print all lines that do not begin with a capital S.
 
