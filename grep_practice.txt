@@ -21,7 +21,8 @@ Once you have the file, write a series of grep statements that do the following:
       grep -P '(a|e|i|o|u)\w\1' grepdata.txt
 
     Print all lines that do not begin with a capital S.
-
+      grep -P '^[^S]' grepdata.txt 
+      
 Write grep statements that use command-line options along with the pattern to do the following:
 
     Print all lines that contain CA in either uppercase or lowercase.
