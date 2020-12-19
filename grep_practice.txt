@@ -27,8 +27,10 @@ Write grep statements that use command-line options along with the pattern to do
 
     Print all lines that contain CA in either uppercase or lowercase.
       grep -Pi 'ca' grepdata.txt
-      
+
     Print all lines that contain an email address (they have an @ in them), preceded by the line number.
+      grep -Pn '@' grepdata.txt 
+
     Print all lines that do not contain the word Sep. (including the period).
     Print all lines that contain the word de as a whole word.
 
