@@ -18,7 +18,7 @@ Once you have the file, write a series of grep statements that do the following:
       grep -P '\w{3}\.\s\d+,\s*\d{4}' grepdata.txt
 
     Print all lines containing a vowel (a, e, i, o, or u) followed by a single character followed by the same vowel again. Thus, it will find “eve” or “adam” but not “vera”. Hint: \( and \)
-      grep -P '(a|e|i|o|u)\w\1' grepdata.txt
+      grep -P '([aeiou]).\1' grepdata.txt
 
     Print all lines that do not begin with a capital S.
       grep -P '^[^S]' grepdata.txt 
@@ -32,7 +32,7 @@ Write grep statements that use command-line options along with the pattern to do
       grep -Pn '@' grepdata.txt 
 
     Print all lines that do not contain the word Sep. (including the period).
-      grep -Pv 'Sep.' grepdata.txt
+      grep -Pv 'Sep\.' grepdata.txt
 
     Print all lines that contain the word de as a whole word.
       grep -Pw 'de' grepdata.txt
