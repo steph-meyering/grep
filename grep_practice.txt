@@ -35,6 +35,7 @@ Write grep statements that use command-line options along with the pattern to do
       grep -Pv 'Sep.' grepdata.txt
 
     Print all lines that contain the word de as a whole word.
+      grep -Pw 'de' grepdata.txt
 
 Save these statements in a file named in the form
 lastname_firstname_grep1.sh
